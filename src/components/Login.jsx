@@ -1,14 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import Signup from './Signup';
 const Login = () => {
-    const [signupbtn,setsignupbtn]=useState(false);
+    // const [signupbtn,setsignupbtn]=useState(false);
     return (
         <div className='Login-container'>
             <div className='login-card'>
                <div className='login-card-1'> 
-               {signupbtn ? <Signup/>:(<>
                <div className='login-head'>LOGIN</div>
                     <div className='login-content'>
                         <form action=''>
@@ -16,12 +14,12 @@ const Login = () => {
                             <input type='password' placeholder='Password' />
                             <button>Login</button>
                         </form>
-                    </div></>) }
+                    </div>
                 
                     
                     <div className='login-signup'>
-                        <p>{signupbtn? 'Already have an account':'dont have an account'}</p>
-                        <button onClick={()=>setsignupbtn(!signupbtn)}>{signupbtn? 'Login': 'Create an Account'}</button>
+                        <p>dont have an account</p>
+                        <NavLink to='/signup'>Create an Account</NavLink>
                     </div>
                 </div>
                 <div className='login-card-2'>

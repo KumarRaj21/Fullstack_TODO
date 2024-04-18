@@ -580,7 +580,6 @@ font-size: 19px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px; */
   border-radius: 25px;
   background-color: white;
 }
@@ -684,8 +683,8 @@ font-size: 19px;
   outline: none;
 }
 .Signup-container{
-  height:90%;
-  width:90%;
+  height:100vh;
+  width:100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -701,8 +700,8 @@ font-size: 19px;
   font-weight: 600;
 }
 .signup-form{
-  height:85%;
-  width:90%;
+  height:100vh;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;

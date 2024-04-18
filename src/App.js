@@ -11,12 +11,14 @@ import { useState } from 'react';
 import Addtask from './components/Addtask';
 import Login from './components/Login';
 import Landingpage from './components/Landingpage';
+import Signup from './components/Signup';
 function App() {
   const [isdarkmode, setisdarkmode] = useState(false);
   const [btnpopup, setbtnpopup] = useState(false);
   const [tasklist, settasklist] = useState([]);
   const [user,setuser] = useState(false);
-  return (user?(<div className='App-container'>
+  return (user?(
+     <div className='App-container'>
       <div className={isdarkmode ? 'dark' : 'light'}>
         <div className='App-left'>
           <div className='App-left-1'>
@@ -129,10 +131,12 @@ function App() {
         </div>
       </div>
       <Addtask trigger={btnpopup} settrigger={setbtnpopup} />
-    </div>):(
+    </div>
+    ):(
       <Routes>
         <Route path='/' element={<Landingpage/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
       
     )
