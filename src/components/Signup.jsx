@@ -64,14 +64,14 @@ const Signup = () => {
     e.preventDefault();
     if (dataValidation()) {
       try {
-        const status = await axios.post(`https://todo-backend-liard-delta.vercel.app/api/auth/signup`, {
+        const status = await axios.post(`${process.env.REACT_APP_API}api/auth/signup`, {
           name: userData.name,
           email: userData.email,
           password: userData.password,
         });
         if (status.status == 200) {
           console.log("User Registered");
-          toast.success("User Registere Successfully!");
+          toast.success("User Registered Successfully!");
           setUserData({
             name: "",
             email: "",
