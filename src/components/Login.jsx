@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
@@ -9,6 +10,7 @@ const Login = () => {
     email: "",
     password: "",
   });
+  const navigate=useNavigate();
   const onChangeData = (e) => {
     if (e.target.id === "email") {
       setLoginData({ ...loginData, email: e.target.value });
@@ -44,6 +46,8 @@ const Login = () => {
         if (status.status == 200) {
           toast.success("Login successful");
           console.log(status);
+          localStorage.setItem('user', status.data);
+          navigate('/');
         }
       } catch (err) {
         // console.log(e);
