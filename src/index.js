@@ -5,12 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import { useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const [user,setuser] = useState(false);
 root.render(
   <React.StrictMode>
     <Router>
+      <ToastContainer/>
           <App />
     </Router>
 
