@@ -16,8 +16,8 @@ function App() {
   const [isdarkmode, setisdarkmode] = useState(false);
   const [btnpopup, setbtnpopup] = useState(false);
   const [tasklist, settasklist] = useState([]);
-  const [user,setuser] = useState(false);
-  return (user?(
+  // const [user,setuser] = useState(false);
+  return (localStorage.getItem('user')?(
      <div className='App-container'>
       <div className={isdarkmode ? 'dark' : 'light'}>
         <div className='App-left'>
