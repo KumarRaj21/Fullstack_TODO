@@ -70,7 +70,7 @@ const Signup = () => {
           password: userData.password,
         });
         if (status.status == 200) {
-          console.log("User Registered");
+          // console.log("User Registered");
           toast.success("User Registered Successfully!");
           setUserData({
             name: "",
