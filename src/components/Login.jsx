@@ -46,7 +46,7 @@ const Login = () => {
         if (status.status == 200) {
           toast.success("Login successful");
           console.log(status);
-          localStorage.setItem('user', status.data);
+          localStorage.setItem('user', JSON.stringify(status.data));
           navigate('/');
         }
       } catch (err) {

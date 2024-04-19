@@ -24,6 +24,7 @@ function App() {
       navigate('/');
     },1000);
   }
+  console.log(localStorage.getItem('user'))
   return (localStorage.getItem('user')?(
      <div className='App-container'>
       <div className={isdarkmode ? 'dark' : 'light'}>
@@ -61,7 +62,7 @@ function App() {
         <div className='App-right'>
           <div className='app-right-head'>
             <div className='app-right-head-1'>
-              <div className='app-right-head-1-1'>Welcome Kumar ! 👋</div>
+              <div className='app-right-head-1-1'>Welcome {localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')).name : ''} ! 👋</div>
               <div className='app-right-head-1-2'>
                 {isdarkmode ? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.16671 2.66671C5.12914 2.66671 2.66671 5.12914 2.66671 8.16671C2.66671 11.2043 5.12914 13.6667 8.16671 13.6667C11.2043 13.6667 13.6667 11.2043 13.6667 8.16671C13.6667 5.12914 11.2043 2.66671 8.16671 2.66671ZM0.833374 8.16671C0.833374 4.11662 4.11662 0.833374 8.16671 0.833374C12.2168 0.833374 15.5 4.11662 15.5 8.16671C15.5 9.86136 14.9252 11.4218 13.9599 12.6635L18.8982 17.6019C19.2562 17.9598 19.2562 18.5402 18.8982 18.8982C18.5402 19.2562 17.9598 19.2562 17.6019 18.8982L12.6635 13.9599C11.4218 14.9252 9.86136 15.5 8.16671 15.5C4.11662 15.5 0.833374 12.2168 0.833374 8.16671Z" fill="white" />
@@ -91,7 +92,7 @@ function App() {
                 <div className='app-right-profile'>
                   <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                      <img src={me} alt='' />
+                      <img src={me} alt='Error in Loading' />
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
