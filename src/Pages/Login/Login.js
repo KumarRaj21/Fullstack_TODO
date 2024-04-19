@@ -78,7 +78,7 @@ function Login() {
           />
           <input type="submit" value="Log In" />
           <div className="registerDiv">
-            <NavLink to="/register" tooltip="Register">Don't have an account?</NavLink>
+            <NavLink to="/signup" tooltip="Register">Don't have an account?</NavLink>
           </div>
         </form>
       </div>
