@@ -105,7 +105,7 @@ function App() {
               <div className='app-right-head-2-1'>
               </div>
               <div className='app-right-head-2-2'>
-                <Dropdown>
+                {/* <Dropdown>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     <b>Filter</b>
                   </Dropdown.Toggle>
@@ -114,7 +114,7 @@ function App() {
                     <Dropdown.Item href="#/action-2">In Progress</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">Done</Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown>
+                </Dropdown> */}
                 <Dropdown>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     <p>Sort</p>
