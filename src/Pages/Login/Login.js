@@ -4,6 +4,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
+import CustomLoader from "../../components/Loader/CustomLoader";
 
 function Login() {
   const [loginData, setLoginData] = useState({
@@ -61,6 +62,8 @@ function Login() {
     setLoader(false);
   };
   return (
+    <>
+    {loader?<CustomLoader/>:null}
     <div className="Login">
       <div className="loginContainer">
         <form action="" onSubmit={onSubmit}>
@@ -90,6 +93,7 @@ function Login() {
         </form>
       </div>
     </div>
+    </>
   );
 }
 
