@@ -42,6 +42,9 @@ form input[type="submit"]{
 form input[type="submit"]:hover{
     background-color: rgba(183,129,105,255);
 }
+form input[type="submit"]:disabled{
+    background-color: gray;
+}
 .loginContainer h2{
     color: white;
 }

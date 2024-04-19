@@ -10,6 +10,7 @@ function Login() {
     email: "",
     password: "",
   });
+  const [loader, setLoader] = useState(false);
   const navigate = useNavigate();
   const onChangeData = (e) => {
     if (e.target.id === "email") {
@@ -38,6 +39,7 @@ function Login() {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (dataValidation()) {
+      setLoader(true);
       try {
         const status = await axios.post(
           `${process.env.REACT_APP_API}api/auth/signin`,
@@ -56,18 +58,20 @@ function Login() {
         toast.error(err?.response?.data?.message);
       }
     }
+    setLoader(false);
   };
   return (
     <div className="Login">
       <div className="loginContainer">
         <form action="" onSubmit={onSubmit}>
-            <h2>Welcome Back!</h2>
+          <h2>Welcome Back!</h2>
           <input
             type="email"
             placeholder="Email"
             id="email"
             value={loginData.email}
             onChange={onChangeData}
+            disabled={loader}
           />
           <input
             type="password"
@@ -75,10 +79,13 @@ function Login() {
             id="password"
             value={loginData.password}
             onChange={onChangeData}
+            disabled={loader}
           />
-          <input type="submit" value="Log In" />
+          <input type="submit" value="Log In" disabled={loader} />
           <div className="registerDiv">
-            <NavLink to="/signup" tooltip="Register">Don't have an account?</NavLink>
+            <NavLink to="/signup" tooltip="Register">
+              Don't have an account?
+            </NavLink>
           </div>
         </form>
       </div>
