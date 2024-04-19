@@ -1,6 +1,6 @@
 export const data=[
     {
-        title:'Tailwind Css',
+        title:'Tailwind CSS',
         des:'learn tailwind',
         progress:90,
         deadline:'12-6-24'
