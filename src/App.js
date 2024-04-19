@@ -12,11 +12,18 @@ import Addtask from './components/Addtask';
 import Login from './components/Login';
 import Landingpage from './components/Landingpage';
 import Signup from './components/Signup';
+import { useNavigate } from 'react-router-dom';
 function App() {
   const [isdarkmode, setisdarkmode] = useState(false);
   const [btnpopup, setbtnpopup] = useState(false);
   const [tasklist, settasklist] = useState([]);
-  // const [user,setuser] = useState(false);
+  const navigate=useNavigate();
+  const handleLogout=()=>{
+    localStorage.removeItem('user');
+    setTimeout(()=>{
+      navigate('/');
+    },1000);
+  }
   return (localStorage.getItem('user')?(
      <div className='App-container'>
       <div className={isdarkmode ? 'dark' : 'light'}>
@@ -88,7 +95,7 @@ function App() {
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Logout</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2" onClick={handleLogout}>Logout</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 </div>
