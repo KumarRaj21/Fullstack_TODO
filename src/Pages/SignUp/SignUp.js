@@ -79,9 +79,9 @@ function SignUp() {
         );
         if (status.status == 200) {
           toast.success("Successfully Registered!");
-          console.log(status);
-          localStorage.setItem("user", JSON.stringify(status.data));
-          navigate("/");
+        //   console.log(status);
+        //   localStorage.setItem("user", JSON.stringify(status.data));
+          navigate("/login");
         }
       } catch (err) {
         toast.error(err?.response?.data?.message);
