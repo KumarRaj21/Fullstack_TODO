@@ -1,0 +1,13 @@
+.CustomLoader{
+    /* border: 2px solid red; */
+    height: 100vh;
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
