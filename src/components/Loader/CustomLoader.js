@@ -6,7 +6,6 @@ const CustomLoader = () => (
   <div className="CustomLoader">
     <Placeholder.Paragraph rows={8} />
     <Loader center content="Loading" /> 
-    {/* <h2>H</h2> */}
   </div>
 );
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useHref, useNavigate } from "react-router-dom";
 import axios from "axios";
 import CustomLoader from "../../components/Loader/CustomLoader";
 
@@ -53,7 +53,9 @@ function Login() {
           toast.success("Login successful");
           console.log(status);
           localStorage.setItem("user", JSON.stringify(status.data));
-          navigate("/");
+          setTimeout(()=>{
+            navigate("/");
+          },3000);
         }
       } catch (err) {
         toast.error(err?.response?.data?.message);
