@@ -51,7 +51,7 @@ function Login() {
         );
         if (status.status == 200) {
           toast.success("Login successful");
-          console.log(status);
+          // console.log(status);
           localStorage.setItem("user", JSON.stringify(status.data));
           setTimeout(()=>{
             navigate("/");
