@@ -6,6 +6,7 @@ import Inprogress from "../../components/Inprogress";
 import Todo from "../../components/Todo";
 import Done from "../../components/Done";
 import Navbar from "../../components/Navbar/Navbar";
+import Header from "../../components/Header/Header";
 
 import "./Private.css";
 
@@ -16,6 +17,7 @@ function Private() {
         <Navbar />
       </div>
       <div className="mainContainer">
+        <Header/>
         <Routes>
           <Route path="/" element={<Alltasks />} />
           <Route path="/inprogress" element={<Inprogress />} />
