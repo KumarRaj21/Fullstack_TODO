@@ -1,5 +1,5 @@
-import React from 'react';
-import "./Navbar.css";
+import React from 'react'
+
 function Navbar() {
   return (
     <div>
@@ -8,4 +8,4 @@ function Navbar() {
   )
 }
 
-export default Navbar;
+export default Navbar

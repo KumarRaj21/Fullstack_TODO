@@ -254,7 +254,7 @@ function AuthorisedComponent() {
               </div>
             </div>
           </div>
-          <div className="app-right-body">
+          {/* <div className="app-right-body">
             <Routes>
               <Route
                 path="/"
@@ -277,7 +277,7 @@ function AuthorisedComponent() {
                 element={<Done tasklist={tasklist} settasklist={settasklist} />}
               />
             </Routes>
-          </div>
+          </div> */}
         </div>
       </div>
       <Addtask trigger={btnpopup} settrigger={setbtnpopup} />

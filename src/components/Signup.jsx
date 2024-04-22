@@ -25,39 +25,7 @@ const Signup = () => {
     }
   };
   const dataValidation = () => {
-    let validation = 1;
-    if (!userData.name.trim()) {
-      toast.error("Name is required");
-      return (validation = 0);
-    }
-
-    // Email validation
-    if (!userData.email.trim()) {
-      toast.error("Email is required");
-      return (validation = 0);
-    } else if (!/\S+@\S+\.\S+/.test(userData.email)) {
-      toast.error("Email is invalid");
-      return (validation = 0);
-    }
-
-    // Password validation
-    if (!userData.password.trim()) {
-      toast.error("Password is required");
-      return (validation = 0);
-    } else if (userData.password.length < 6) {
-      toast.error("Password must be at least 6 characters");
-      return (validation = 0);
-    }
-
-    // Confirm password validation
-    if (!userData.confirmPassword.trim()) {
-      toast.error("Confirm Password is required");
-      return (validation = 0);
-    } else if (userData.confirmPassword !== userData.password) {
-      toast.error("Passwords do not match");
-      return (validation = 0);
-    }
-    return validation;
+    
   };
   // console.log(process.env.API);
   const registerUser = async (e) => {

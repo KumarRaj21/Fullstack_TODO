@@ -1,0 +1,13 @@
+.private_page{
+    border:2px solid red;
+    display: flex;
+}
+.sideBar{
+    width: 14%;
+    border: 2px solid pink;
+    height: 100vh;
+}
+.mainContainer{
+    border: 2px solid black;
+    width: 100%;
+}
