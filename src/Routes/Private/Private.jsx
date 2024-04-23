@@ -3,9 +3,8 @@ import { Route, Routes } from "react-router-dom";
 
 // import Alltasks from "../../components/Alltasks";
 import AllTask from "../../Pages/AllTask/AllTask";
-import Inprogress from "../../components/Inprogress";
-// import Todo from "../../components/Todo";
-import Done from "../../components/Done";
+import InProgress from "../../Pages/InProgress/InProgress";
+import Done from "../../Pages/Done/Done";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 
@@ -21,7 +20,7 @@ function Private() {
         <Header/>
         <Routes>
           <Route path="/" element={<AllTask />} />
-          <Route path="/inprogress" element={<Inprogress />} />
+          <Route path="/inprogress" element={<InProgress />} />
           {/* <Route path="/todo" element={<Todo />} /> */}
           <Route path="/done" element={<Done />} />
         </Routes>
