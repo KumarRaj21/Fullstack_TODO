@@ -2,6 +2,27 @@
     border: 2px solid pink;
     height: 100vh;} */
 .Navbar{
-    border: 2px solid pink;
+    /* border: 2px solid pisnk; */
     height: 100%;
+}
+.Task{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigations{
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+.navigations a{
+    /* border: 2px solid red; */
+    display: block;
+    margin-top: 30px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
 }
