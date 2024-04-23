@@ -1,0 +1,48 @@
+.Navbar{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    /* border: 0px solid red; */
+}
+.Task{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigations{
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+.navigations a{
+    /* border: 2px solid red; */
+    display: block;
+    margin-top: 30px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.container{
+    /* border: 2px solid red; */
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* margin: 0 */
+}
+.container button{
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    
+    outline: none;
+    border: none;
+}
