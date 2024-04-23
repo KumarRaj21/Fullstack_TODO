@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Alltasks from "../../components/Alltasks";
 import Inprogress from "../../components/Inprogress";
-import Todo from "../../components/Todo";
+// import Todo from "../../components/Todo";
 import Done from "../../components/Done";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
@@ -21,7 +21,7 @@ function Private() {
         <Routes>
           <Route path="/" element={<Alltasks />} />
           <Route path="/inprogress" element={<Inprogress />} />
-          <Route path="/todo" element={<Todo />} />
+          {/* <Route path="/todo" element={<Todo />} /> */}
           <Route path="/done" element={<Done />} />
         </Routes>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Cardslist from './Cardslist'
+import Cards from './Cards/Cards';
 import {data} from '../Data';
 import noitem from '../images/noitem-removebg-preview.png'
 const Inprogress = () => {
@@ -8,7 +8,7 @@ const Inprogress = () => {
     data.map((item,index)=>{
       return (<>
         {item.progress < 100 ? (
-          <Cardslist data ={item} key ={index}/>
+          <Cards data ={item} key ={index}/>
         ):''
     }
       </>)
