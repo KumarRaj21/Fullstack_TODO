@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Alltasks from "../../components/Alltasks";
-import Inprogress from "../../components/Inprogress";
-// import Todo from "../../components/Todo";
-import Done from "../../components/Done";
+// import Alltasks from "../../components/Alltasks";
+import AllTask from "../../Pages/AllTask/AllTask";
+import InProgress from "../../Pages/InProgress/InProgress";
+import Done from "../../Pages/Done/Done";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 
@@ -19,8 +19,8 @@ function Private() {
       <div className="mainContainer">
         <Header/>
         <Routes>
-          <Route path="/" element={<Alltasks />} />
-          <Route path="/inprogress" element={<Inprogress />} />
+          <Route path="/" element={<AllTask />} />
+          <Route path="/inprogress" element={<InProgress />} />
           {/* <Route path="/todo" element={<Todo />} /> */}
           <Route path="/done" element={<Done />} />
         </Routes>

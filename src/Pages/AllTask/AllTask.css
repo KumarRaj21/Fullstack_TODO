@@ -1,0 +1,8 @@
+.allTask{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
