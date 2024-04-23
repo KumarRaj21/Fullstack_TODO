@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,14 +15,17 @@
     display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 .dark a{
-  color:white
+  color:white;
+  font-family: 'Poppins', sans-serif;
 }
 .dark .App-right{
   /* background-color: black; */
     background-color:rgb(34, 34, 34);
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 .light {
   background-color:white;
@@ -32,6 +35,7 @@
     display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 .darkicon{
   color: white;
@@ -45,6 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 .App-left{
   height: 100%;
@@ -486,10 +491,29 @@ font-size: 19px;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  background-color: #302C42;
+  font-family: "Montserrat", sans-serif;
 }
 .app-container-2-head{
   height:10%;
   width:95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+.app-container-2-head-1{
+  height:100%;
+  width:50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.app-container-2-head-2{
+  height:100%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -501,7 +525,7 @@ font-size: 19px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: grey;
+  color: white;
   font-size: 17px;
 }
 .app-container-2-body{
@@ -510,60 +534,97 @@ font-size: 19px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color:white;
 }
 .app-container-2-1{
-  height:40%;
-  width:40%;
+  height:50%;
+  width:50%;
   display: flex;
   justify-content:space-between;
   align-items: center;
   flex-direction: column;
+  /* padding-left: 15px; */
+  z-index: 1;
+}
+.app-container-2-1 svg{
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+left:20px;
+height:400px;
 }
 .app-container-2-2{
-  height:100%;
-  width:60%;
+   height:100%;
+  width:50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./images/todolist4-removebg-preview.png');
-  background-repeat: no-repeat;
-  background-position: 100%;
-  backface-visibility: visible;
-  background-size: cover;
+}
+.app-container-2-2 svg{
+  height: 90%;
+  position: absolute;
+width: 600px;
+height: 600px;
+left: 747px;
+top: 72px;
 }
 .app-container-2-2 img{
-  height: 100%;
-  width:100%
+  height: 60%;
+/* width: 532.65px; */
+/* height: 444.01px; */
+/* left: 800.35px;
+top: 268.15px; */
+
+background: rgba(0, 0, 0, 0.13);
+border-radius: 100px 100px 100px 240px;
+
+
+  z-index: 1;
 }
 .app-container-2-1-head{
-  height:50%;
-  width:80%;
+  height:40%;
+  width:90%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 60px;
   font-weight: 600;
 }
 .app-container-2-1-content{
+  height:30%;
+  width:80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+}
+.app-login-navlink{
   height:20%;
   width:80%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  font-size: 18px;
-  color: grey;
 }
-.app-container-2-1 a{
-  height:15%;
-  width:30%;
+.app-login-navlink a{
+  height:90%;
+  width:50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
-  background-color: rgb(255, 145, 0);
-  border-radius: 26px;
   font-size: 20px;
+  color: black;
+/* width: 157.56px;
+height: 46.84px; */
+/* left: 1198.44px;
+top: 100.3px; */
+
+background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+border-radius: 40px;
+
 }
 .Login-container{
   height:100vh;
