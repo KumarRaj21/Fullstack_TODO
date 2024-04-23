@@ -1,7 +1,7 @@
 const NAV_ROUTES=[
     {
         text:"All tasks",
-        path:"/all"
+        path:"/"
     },
     {
         text:"In Progress",
