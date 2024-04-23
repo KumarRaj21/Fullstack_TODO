@@ -7,6 +7,9 @@
     width: 20%;
     /* border: 2px solid pink; */
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainContainer{
     /* border: 2px solid black; */

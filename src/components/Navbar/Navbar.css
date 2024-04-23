@@ -1,9 +1,8 @@
-/* .Navbar{width: 20%;
-    border: 2px solid pink;
-    height: 100vh;} */
 .Navbar{
-    /* border: 2px solid pisnk; */
+    background-color: gray;
     height: 100%;
+    width: 100%;
+    /* border: 0px solid red; */
 }
 .Task{
     /* border: 2px solid red; */
