@@ -25,3 +25,24 @@
     text-decoration: none;
     color: black;
 }
+.container{
+    /* border: 2px solid red; */
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* margin: 0 */
+}
+.container button{
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    
+    outline: none;
+    border: none;
+}

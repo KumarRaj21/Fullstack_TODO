@@ -16,6 +16,9 @@ function Navbar() {
           })
         }
       </div>
+      <div className="container">
+        <button>Dark</button>
+      </div>
     </div>
   );
 }
