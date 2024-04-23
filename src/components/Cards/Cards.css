@@ -1,0 +1,74 @@
+.Cards{
+    /* border: 2px solid red; */
+    width: 335.78px;
+    height: 178px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.cardHead{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: centers;
+}
+.left h2{
+    font-size: 16px;
+    line-height: 12px;
+}
+.left p{
+    font-size: 12px;
+}
+.right button{
+    width: 27.82px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.progressSection{
+    /* margin-top: 20px; */
+    /* border: 2px solid red; */
+}
+.labelSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.labelSection p{
+    font-weight: bolder;
+}
+.progressBar{
+    /* border: 2px solid red; */
+    /* margin-top: 10px; */
+    height: 4px;
+    border-radius: 6px;
+    background-color: gray;
+}
+.progress{
+    height: 90%;
+    width: 0%;
+    margin: 0;
+    background-color: #FFA048;
+    
+}
+.cardFooter{
+    /* border: 2px solid red; */
+    /* margin-top: 22px; */
+}
+.cardFooter h2{
+    /* color: #FF7979; */
+    background-color: #f9d0d0;
+    color: #FF7979;
+    font-size: 15px;
+    /* background-color: #FFA048; */
+    display: inline;
+    padding: 6px 12px 6px 12px;
+    border-radius: 16px;
+}
