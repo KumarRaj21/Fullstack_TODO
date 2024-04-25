@@ -7,14 +7,33 @@ function Navbar() {
     <div className="Navbar">
       <div className="Task">
         <h2>Tasks</h2>
-        <button>+</button>
+        <button>
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="14" cy="14" r="14" fill="#1C1D22" fill-opacity="0.08"/>
+<g opacity="0.4">
+<path d="M18 14L10 14" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
+<path d="M14 18L14 10" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>
+
+        </button>
       </div>
       <div className="navigations">
-        {
+        <div className="navigations-1">
+        <svg width="21" height="176" viewBox="0 0 21 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.27219 113.287H20.0828" stroke="#1C1D22" stroke-opacity="0.1" stroke-width="2" stroke-linejoin="round"/>
+<path d="M2.27219 64.7356H20.0828" stroke="#1C1D22" stroke-opacity="0.1" stroke-width="2" stroke-linejoin="round"/>
+<path d="M2.27219 18.2069H20.0828" stroke="#1C1D22" stroke-opacity="0.1" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1 0L1.00001 176" stroke="#1C1D22" stroke-opacity="0.1" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+
+
+        </div>
+        <div className="navigations-2">{
           NAV_ROUTES.map((item,index)=>{
             return <NavLink to={item.path} key={index}>{item.text}</NavLink>
           })
-        }
+        }</div>
       </div>
       <div className="container">
         <div className="mode-box">
