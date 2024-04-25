@@ -1,6 +1,7 @@
 import React from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import "./Header.css";
+import img from "../../images/user-solid.svg";
 
 function Header() {
   return (
@@ -26,7 +27,7 @@ function Header() {
           <div className='headerrightpart-2'>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {/* <img src={Profile} alt=''/> */}
+                <img src={img} alt='Error in Loading'/>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
