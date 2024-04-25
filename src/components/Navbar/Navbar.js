@@ -1,13 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Navbar.css";
 import NAV_ROUTES from "../../Configurations/NavRoutes";
 import { NavLink } from "react-router-dom";
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="Navbar">
       <div className="Task">
         <h2>Tasks</h2>
-        <button>
+        <button onClick={()=> props.settrigger(!props.trigger)}>
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="14" cy="14" r="14" fill="#1C1D22" fill-opacity="0.08"/>
 <g opacity="0.4">
