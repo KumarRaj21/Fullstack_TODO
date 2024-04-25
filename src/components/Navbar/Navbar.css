@@ -26,23 +26,60 @@
     color: black;
 }
 .container{
-    /* border: 2px solid red; */
-    margin-top: 380px;
+    margin-top: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
     /* margin: 0 */
 }
-.container button{
-    background-color: black;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 6px;
-    
-    outline: none;
+.mode-box{
+    height:45px;
+    width:215px;
+left: 34px;
+top: 954px;
+background-color: rgb(117, 117, 117);
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 20px;
+}
+.light-mode,.dark-mode{
+    height:95%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
+ border-radius: 20px;
+}
+.lightmode-svg,.darkmode-svg{
+height:100%;
+width:20%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.lightmode-svg svg,.darkmode-svg svg{
+height:90%;
+}
+.light-mode p, .dark-mode p{
+    height:100%;
+    width:65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+.container .active{
+width: 50%;
+height: 90%;
+left: 34px;
+top: 954px;
+border-radius: 20px ;
+background-color: white;
+color: black;
+font-size: 12px;
+font-weight: 600;
+     border-radius: 20px; 
 }
