@@ -1,4 +1,60 @@
-.Header{
+.Header {
     /* border: 2px solid red; */
     height: 15%;
+}
+.right-header{
+    height:18%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.right-header-1{
+    height:50%;
+    width:100%;
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-header-1-1{
+    height:100%;
+    width:74%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+  }
+.right-header-1-2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dropdown-basic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 65px;
+    border-radius: 0px;
+}
+.dropdown .btn-success {
+    --bs-btn-color: none;
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: none;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: none;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
 }
